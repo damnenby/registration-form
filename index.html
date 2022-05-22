@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="title">
+                <h1>Регистрация</h1>
+            </div>
+            <div class="form">
+                <div class="inputfield">
+                    <label for="surname">Фамилия:</label>
+                    <input type="text" placeholder="Введите фамилию" name="surname" required>
+                </div>
+                <div class="inputfield">
+                    <label for="name">Имя:</label>
+                    <input type="text" placeholder="Введите имя" name="name" required>
+                </div>
+                <div class="inputfield">
+                    <label for="patronymic">Отчество:</label>
+                    <input type="text" placeholder="Введите отчество" name="patronymic" required>
+                </div>
+                <div class="inputfield">
+                    <label for="date">Дата рождения:</label>
+                    <div class="select-inputfield">
+                        <select name="date" class="dob">
+                            <option value="1">Дата</option>
+                        </select>
+                        <select name="month" class="dob">
+                            <option value="1">Месяц</option>
+                        </select>
+                        <select name="year" class="dob">
+                            <option value="1">Год</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="inputfield">
+                    <label for="pwd">Пароль:</label>
+                    <input type="password" placeholder="Введите пароль" name="pwd" required>
+                </div>
+                <div class="inputfield">
+                    <label for="pwd_confirm">Подтвердите пароль:</label>
+                    <input type="password" placeholder="Введите пароль еще раз" name="pwd_confirm" required>
+                </div>
+                <div class="inputfield">
+                    <label for="number">Телефон:</label>
+                    <input type="number" placeholder="Введите имя" name="number" required>
+                </div>
+                <div class="inputfield adress">
+                    <label for="adress">Адрес:</label>
+                    <input type="text" placeholder="Введите адрес" name="adress" required>
+                </div>
+                <div class="inputfield">
+                    <label for="sex">Пол:</label>
+                    <div class="radio-inputfield">
+                        <div class="radio">
+                            <input type="radio" id="male" name="sex" checked>
+                            <label for="male">Мужской</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="female" name="sex">
+                            <label for="female">Женский</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox-inputfield">
+                    <div class="space"></div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="confirmation">
+                        <label for="confirmation">Я согласен с
+                            <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B1%D1%81%D1%82%D0%B2%D0%BE">условиями</a>.</label>
+                    </div>
+                </div>
+            </div>
+            <div class="regbuttons">
+                <div class="space"></div>
+                <button class="regbutton">Регистрация</button>
+                <button class="clearform">Очистить форму</button>
+            </div>
+        </div>
+    </body>
+</html>
